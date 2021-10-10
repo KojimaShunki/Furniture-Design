@@ -1,0 +1,125 @@
+$font-color : #333;
+
+html {
+  font-size: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+  font-size: 0.75rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  > a {
+    display: inline-block;
+    margin-top: 32px;
+
+    .site-title {
+      line-height: 0;
+
+      img {
+        width: 180px;
+      }
+    }
+  }
+
+  .humberger-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    // background-color: pink;
+    z-index: 30;
+    cursor: pointer;
+    transition: 0.4s;
+    padding-top: 10px;
+    position: relative;
+
+    &:hover {
+      opacity: 0.5;
+    }
+    
+    span {
+      width: 30px;
+      height: 2px;
+      background-color: $font-color;
+      transition: 0.3s ease-in-out;
+
+      &:nth-child(1) {
+        position: absolute;
+        top: 9px;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 19px;
+      }
+    }
+
+    &.active {
+      span:nth-child(1) {
+        top: 14px;
+        background: #fff;
+        transform: rotate(-45deg);
+      }
+
+      span:nth-child(2) {
+        top: 14px;
+        background: #fff;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  #humberger-navigation {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    padding-top: 40px;
+    padding-left: 40px; 
+    visibility: hidden;
+    
+
+    li {
+      margin-bottom: 16px;
+      transition: all 0.3s;
+      transform: translateX(-100px);
+      a {
+        color:#fff;
+        font-size: 0.9rem;
+      }
+    }
+
+    &.active {
+      opacity: 0.8;
+      // display: block;
+      visibility: visible;
+
+      li {
+        transform: translateX(0);
+      }
+    }
+  }
+}
