@@ -149,6 +149,19 @@ main a {
   text-align: center;
 }
 
+main .index-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .index-btn a {
+  margin: 0 10px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

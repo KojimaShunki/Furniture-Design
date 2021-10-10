@@ -140,6 +140,15 @@ main {
     font-size: 0.875rem;
     text-align: center;
   }
+
+  .index-btn {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin: 0 10px;
+    }
+  }
 }
 
 footer {
