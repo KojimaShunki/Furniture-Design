@@ -8,6 +8,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 img {
@@ -127,5 +128,48 @@ header #humberger-navigation.active {
 header #humberger-navigation.active li {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+main {
+  margin-top: 30px;
+}
+
+main ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23.5% 23.5% 23.5% 23.5%;
+      grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+  gap: 40px 2%;
+  margin-bottom: 32px;
+}
+
+main a {
+  display: block;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0 12px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 30px;
+}
+
+footer p {
+  font-size: 0.625rem;
 }
 /*# sourceMappingURL=styles.css.map */
