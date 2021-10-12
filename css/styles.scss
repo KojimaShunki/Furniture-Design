@@ -25,12 +25,17 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: calc(128% * 100 / 136);
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
 
   > a {
     display: inline-block;
     margin-top: 32px;
+    margin-bottom: 32px;
 
     .site-title {
       line-height: 0;
@@ -127,7 +132,8 @@ header {
 }
 
 main {
-  margin-top: 30px;
+  margin-top: 110px;
+  margin-bottom: 60px;
   ul {
     display: grid;
     grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
@@ -136,9 +142,17 @@ main {
   }
 
   a {
-    display: block;
-    font-size: 0.875rem;
+    display: inline-block;
+    
+    
+  }
+
+  .more-btn {
     text-align: center;
+
+    a {
+      font-size: 0.875rem;
+    }
   }
 
   .index-btn {
@@ -147,6 +161,128 @@ main {
 
     a {
       margin: 0 20px;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.detail {
+  padding-bottom: 60px;
+
+  .wrapper {
+    max-width: 800px;
+    font-size: 0.9rem;
+
+    h2 {
+      font-size: 0.9rem;
+      font-weight: normal;
+      margin: 60px 0 30px;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        max-width: 400px;
+      }
+
+      .text {
+        max-width: 330px;
+      
+        p {
+          margin-bottom: 40px;
+        }
+
+        dl {
+          display: flex;
+          flex-wrap: wrap;
+
+          dt {
+            width: 30%;
+          }
+
+          dd {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  
+  .back-btn {
+    margin-top: 56px;
+    text-align: center;
+    a {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.about {
+  .wrapper {
+    max-width: 600px;
+    font-size: 0.9rem;
+
+    h2 {
+      font-size: 0.9rem;
+      font-weight: normal;
+      margin: 60px 0 30px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.company {
+  margin-bottom: 100px;
+
+  .wrapper {
+    max-width: 600px;
+    font-size: 0.9rem;
+
+    h2 {
+      font-size: 0.9rem;
+      font-weight: normal;
+      margin: 60px 0 30px;
+    }
+
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+
+      dt {
+        width: 30%;
+        padding: 20px 10px;
+        border-bottom: 1px solid #DCDBDB;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+
+      dd {
+        width: 70%;
+        padding: 20px 10px;
+        border-bottom: 1px solid #DCDBDB;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+
+        ul {
+          display: block;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    iframe {
+      filter: grayscale(1);
+      width: 600px;
+      height: 300px;
     }
   }
 }

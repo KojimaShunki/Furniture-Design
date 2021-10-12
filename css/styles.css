@@ -23,6 +23,10 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: calc(128% * 100 / 136);
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +38,7 @@ header {
 header > a {
   display: inline-block;
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 header > a .site-title {
@@ -131,7 +136,8 @@ header #humberger-navigation.active li {
 }
 
 main {
-  margin-top: 30px;
+  margin-top: 110px;
+  margin-bottom: 60px;
 }
 
 main ul {
@@ -144,9 +150,15 @@ main ul {
 }
 
 main a {
-  display: block;
-  font-size: 0.875rem;
+  display: inline-block;
+}
+
+main .more-btn {
   text-align: center;
+}
+
+main .more-btn a {
+  font-size: 0.875rem;
 }
 
 main .index-btn {
@@ -160,6 +172,138 @@ main .index-btn {
 
 main .index-btn a {
   margin: 0 20px;
+  font-size: 0.875rem;
+}
+
+.detail {
+  padding-bottom: 60px;
+}
+
+.detail .wrapper {
+  max-width: 800px;
+  font-size: 0.9rem;
+}
+
+.detail .wrapper h2 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 60px 0 30px;
+}
+
+.detail .wrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.detail .wrapper .flex img {
+  max-width: 400px;
+}
+
+.detail .wrapper .flex .text {
+  max-width: 330px;
+}
+
+.detail .wrapper .flex .text p {
+  margin-bottom: 40px;
+}
+
+.detail .wrapper .flex .text dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.detail .wrapper .flex .text dl dt {
+  width: 30%;
+}
+
+.detail .wrapper .flex .text dl dd {
+  width: 70%;
+}
+
+.detail .back-btn {
+  margin-top: 56px;
+  text-align: center;
+}
+
+.detail .back-btn a {
+  font-size: 0.875rem;
+}
+
+.about .wrapper {
+  max-width: 600px;
+  font-size: 0.9rem;
+}
+
+.about .wrapper h2 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 60px 0 30px;
+}
+
+.about .wrapper p {
+  margin-bottom: 30px;
+}
+
+.company {
+  margin-bottom: 100px;
+}
+
+.company .wrapper {
+  max-width: 600px;
+  font-size: 0.9rem;
+}
+
+.company .wrapper h2 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 60px 0 30px;
+}
+
+.company .wrapper dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.company .wrapper dl dt {
+  width: 30%;
+  padding: 20px 10px;
+  border-bottom: 1px solid #DCDBDB;
+}
+
+.company .wrapper dl dt:last-of-type {
+  border-bottom: none;
+}
+
+.company .wrapper dl dd {
+  width: 70%;
+  padding: 20px 10px;
+  border-bottom: 1px solid #DCDBDB;
+}
+
+.company .wrapper dl dd:last-of-type {
+  border-bottom: none;
+}
+
+.company .wrapper dl dd ul {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.company .wrapper iframe {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  width: 600px;
+  height: 300px;
 }
 
 footer {
