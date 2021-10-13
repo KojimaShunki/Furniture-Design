@@ -16,16 +16,16 @@ img {
 }
 
 body {
-  max-width: 1360px;
-  padding: 0 40px;
-  margin: 0 auto;
   font-size: 0.75rem;
 }
 
 header {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
   position: fixed;
   top: 0;
-  width: calc(128% * 100 / 136);
+  width: 100%;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,8 +136,9 @@ header #humberger-navigation.active li {
 }
 
 main {
-  margin-top: 110px;
-  margin-bottom: 60px;
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 110px auto 60px;
 }
 
 main ul {
@@ -292,6 +293,7 @@ main .index-btn a {
 
 .company .wrapper dl dd:last-of-type {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .company .wrapper dl dd ul {
@@ -302,18 +304,26 @@ main .index-btn a {
 .company .wrapper iframe {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  width: 600px;
+  width: 100%;
   height: 300px;
 }
 
 footer {
+  max-width: 1360px;
+  margin: 60px auto 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 60px 0 12px;
+  padding: 0 40px;
+}
+
+footer.position, footer.position2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer ul {
@@ -328,5 +338,45 @@ footer ul li {
 
 footer p {
   font-size: 0.625rem;
+}
+
+@media (max-width: 900px) {
+  main {
+    margin-top: 120px;
+  }
+  main ul {
+    -ms-grid-columns: 47% 47%;
+        grid-template-columns: 47% 47%;
+    gap: 24px 6%;
+  }
+  .company .wrapper dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .company .wrapper dl dt {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: none;
+  }
+  .company .wrapper dl dd {
+    width: 100%;
+    padding-top: 0;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  footer.position2 {
+    position: static;
+  }
+  footer ul {
+    margin-bottom: 5px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
