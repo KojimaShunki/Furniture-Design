@@ -33,6 +33,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 10;
 }
 
 header > a {
@@ -150,8 +151,17 @@ main ul {
   margin-bottom: 32px;
 }
 
-main a {
+main ul a {
   display: inline-block;
+}
+
+main ul a img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main ul a:hover img {
+  opacity: 0.7;
 }
 
 main .more-btn {
@@ -348,6 +358,19 @@ footer p {
     -ms-grid-columns: 47% 47%;
         grid-template-columns: 47% 47%;
     gap: 24px 6%;
+  }
+  .detail .wrapper .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detail .wrapper .flex img {
+    max-width: 100%;
+  }
+  .detail .wrapper .flex .text {
+    max-width: 100%;
+    margin-top: 32px;
   }
   .company .wrapper dl {
     -webkit-box-orient: vertical;
