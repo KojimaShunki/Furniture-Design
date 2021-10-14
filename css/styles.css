@@ -368,6 +368,7 @@ footer p {
   }
   .detail .wrapper .flex img {
     max-width: 100%;
+    height: auto;
   }
   .detail .wrapper .flex .text {
     max-width: 100%;
