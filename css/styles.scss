@@ -197,6 +197,7 @@ main {
 
       img {
         max-width: 400px;
+        height: 400px;
       }
 
       .text {
@@ -307,8 +308,7 @@ footer {
   justify-content: space-between;
   padding: 0 40px;
 
-  &.position,
-  &.position2 {
+  &.position {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -381,7 +381,7 @@ footer {
     margin-top: 100px;
     margin-bottom: 20px;
 
-    &.position2 {
+    &.position {
       position: static;
     }
 

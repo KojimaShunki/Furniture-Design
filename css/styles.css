@@ -212,6 +212,7 @@ main .index-btn a {
 
 .detail .wrapper .flex img {
   max-width: 400px;
+  height: 400px;
 }
 
 .detail .wrapper .flex .text {
@@ -330,7 +331,7 @@ footer {
   padding: 0 40px;
 }
 
-footer.position, footer.position2 {
+footer.position {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -395,7 +396,7 @@ footer p {
     margin-top: 100px;
     margin-bottom: 20px;
   }
-  footer.position2 {
+  footer.position {
     position: static;
   }
   footer ul {
