@@ -36,17 +36,17 @@ header {
   z-index: 10;
 }
 
-header > a {
+header .site-title {
+  line-height: 0;
+}
+
+header .site-title a {
   display: inline-block;
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
-header > a .site-title {
-  line-height: 0;
-}
-
-header > a .site-title img {
+header .site-title a img {
   width: 180px;
 }
 
